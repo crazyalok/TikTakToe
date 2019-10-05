@@ -77,32 +77,32 @@ def comp_row(a,b,c) :
             r+=1
             a[i]='X'
             break
-        #elif b[i]==b[i+1] and b[i+2]!='O' and b[i+2]!='X' :
-            #print b[i] , ' Comouter Wins'
-            #r+=1
-            #b[i+2]='X'
-            #break
-       # elif b[i+2]==b[i+1] and b[i]!='O' and b[i]!='X' :
-            #print b[i] , ' Comouter Wins'
-            #r+=1
-            #b[i]='X'
-            #break
-       # elif b[i]==b[i+2] and b[i+1]!='O' and b[i+1]!='X' :
-            #print b[i] , ' Comouter Wins'
-           ### b[i+1]='X'
-            #break
+        elif b[i]==b[i+1] and b[i+2]!='O' and b[i+2]!='X' :
+            print b[i] , ' Comouter Wins'
+            r+=1
+            b[i+2]='X'
+            break
+       elif b[i+2]==b[i+1] and b[i]!='O' and b[i]!='X' :
+            print b[i] , ' Comouter Wins'
+            r+=1
+            b[i]='X'
+            break
+        elif b[i]==b[i+2] and b[i+1]!='O' and b[i+1]!='X' :
+            print b[i] , ' Comouter Wins'
+            b[i+1]='X'
+            break
         elif c[i]==c[i+1] and c[i+2]!='O' and c[i+2]!='X' : 
-            #print c[i] , ' Computer Wins'
+            print c[i] , ' Computer Wins'
             r+=1
             c[i+2]='X'
             break
         elif c[i]==c[i+2] and c[i+1]!='O' and c[i+1]!='X' : 
-            #print c[i] , ' Computer Wins'
+            print c[i] , ' Computer Wins'
             r+=1
             c[i+1]='X'
             break
         elif c[i+1]==c[i+2] and c[i]!='O' and c[i]!='X' : 
-            #print c[i] , ' Computer Wins'
+            print c[i] , ' Computer Wins'
             r+=1
             c[i]='X'
             break
